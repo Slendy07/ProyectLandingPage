@@ -1,25 +1,19 @@
-
-const toggleButton = document.getElementById("button-menu");
-const navWrapper = document.getElementById("nav");
-
-/* 
-  cada ves que se haga click en el botón 
-  agrega y quita las clases necesarias 
-  para que el menú se muestre.
-*/
-toggleButton.addEventListener("click", () => {
-  toggleButton.classList.toggle("close");
-  navWrapper.classList.toggle("show");
+document.getElementById("button-menu").addEventListener("click", () => {
+  document.getElementById("button-menu").classList.toggle("close");
+  document.getElementById("nav").classList.toggle("show");
 });
 
-/* 
-  Cuándo se haga click fuera del contenedor de enlaces 
-  el menú debe esconderse.
-*/
-
-navWrapper.addEventListener("click", e => {
+document.getElementById("nav").addEventListener("click", e => {
   if (e.target.id === "nav") {
-    navWrapper.classList.remove("show");
-    toggleButton.classList.remove("close");
+    document.getElementById("nav").classList.remove("show");
+    document.getElementById("button-menu").classList.remove("close");
   }
 });
+
+// Redireccion hacia las wiki de star wars
+
+//wiki jedi
+const redirectUrl = function(url){
+  var win = window.open(url, '_blank');
+ win.focus();
+}
