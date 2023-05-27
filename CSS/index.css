@@ -1,0 +1,23 @@
+@import './navbar.css';
+@import './wrapper.css';
+@import './main-content.css';
+@import './Simbolos.css';
+@import './footer.css';
+@import './banner-style.css';
+
+:root{
+    --black: #202020;
+    --white: #FFFFFF;
+    --blue: #E0FFFF;
+    --red: #FF0000;
+    --font: system-ui;
+    --yellow: #ecab0f;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+    background-color: var(--yellow);
+    font-family: var(--font);
+}
